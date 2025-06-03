@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Cosetology Le Calme</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.cdnfonts.com/css/roslindale" rel="stylesheet">
+  <script defer src="main.js"></script>
+  <!-- GSAP Core -->
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <!-- ScrollTrigger Plugin -->
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+  
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img class="header-logo" src="img/logo-black.png" alt="logo" srcset="">
+    </div>
+    <ul class="nav-links">
+      <li><a class="active" href="#">HOME</a></li>
+      <li><a href="#">PRODUCTS</a></li>
+      <li><a href="#">SERVICES</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">BLOG</a></li>
+    </ul>
+    <a href="#" class="contact-btn">CONTACT</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="text-hero">
+        <h1> Welcome to <br> Le Calme Studio, where beauty meets expertise!</h1>
+        
+
+
+        <svg id="demo" xmlns="http://www.w3.org/2000/svg" width="220" height="60" viewBox="0 0 220 60">
+          <!-- White circular button -->
+          <rect x="0" y="0" width="60" height="60" rx="30" ry="30" fill="#ffffff" />
+          <!-- White border outline -->
+          <rect x="0" y="0" width="220" height="60" rx="30" ry="30" fill="none" stroke="#ffffff" stroke-width="3"/> 
+          <!-- Text in white -->
+          <text transform="translate(130 38)" text-anchor="middle" font-size="20" fill="#ffffff">START NOW</text>
+          <!-- Arrow line in black -->
+          <line x1="38" y1="30" x2="38" y2="30" stroke-width="4" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Arrow polyline in black -->
+          <polyline id="start" points="27 20 38 30 27 40" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-width="4"></polyline>
+        </svg>
+        
+        
+        
+
+
+
+      </div>
+
+      <div class="hero-image">
+        <img class="droplit" src="img/droplit.gif" alt="Droplet animation" />
+        <img class="droplit-two" src="img/droplit-two.gif" alt="Droplet animation" />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro/Info Section -->
+  <section class="beauty-section">
+    <div class="beauty-images">
+      <img class="image" src="img/black-medi.jpeg" alt="Facial treatment" class="beauty-img-top" />
+      <img class="image-overlap" src="img/massageimage.jpeg" alt="Cosmetics expert" class="beauty-img-bottom" />
+    </div>
+    <div class="beauty-content">
+      <h1 class="beauty-heading">Discovering the Beautician</h1>
+      <p class="beauty-description">
+        Explore unique options, try different treatments, and consult with specialists to find what suits your needs.
+        <br> This option is for New customers.
+      </p>
+      <button class="beauty-button">
+        <span class="beauty-icon">&#10140;</span> Explore treatments
+      </button>
+    </div>
+  </section>
+
+
+
+  <div class="scroll-container">
+    <div class="step" id="step1">
+      <div class="circle"><span>1</span></div>
+      <h2 class="step-header">
+        Facial Treatment</h2>
+        <img class="image-scroll" src="img/facialimage.jpg" alt="" srcset="">
+
+      <p class="para-section">Deep cleansing with extraction
+        This is a procedure for all skin types. 
+        Deep cleansing of each pore with manual removal of sebum.
+        After the procedure, you will feel breathing skin and see a healthy, radiant face.</p>
+
+    </div>
+    <div class="step" id="step2">
+      <div class="circle"><span>2</span></div>
+      <h2 class="step-header">
+        Body Treatment</h2>
+        <img class="image-scroll" src="img/massageimage.jpeg" alt="" srcset="">
+        <p class="para-section">This specialized treatment targets problem areas, employing a combination of targeted techniques to stimulate circulation, 
+        break down stubborn cellulite, and promote lymphatic drainage. 
+        Our skilled therapists use a unique blend of firm strokes and specialized tools to improve skin elasticity, reduce the appearance of dimples, 
+        and leave you with a revitalized, toned silhouette</p>
+    </div>
+
+    <div class="step" id="step2">
+      <div class="circle"><span>3</span></div>
+      <h2 class="step-header">Special offer</h2>
+      <img class="image-scroll" src="img/skincare.png" alt="" srcset="">
+      <p class="para-section">This specialized treatment targets problem areas, employing a combination of targeted techniques to stimulate circulation, 
+        break down stubborn cellulite, and promote lymphatic drainage. 
+        Our skilled therapists use a unique blend of firm strokes and specialized tools to improve skin elasticity, reduce the appearance of dimples, 
+        and leave you with a revitalized, toned silhouette</p>
+    </div>
+
+    <div class="step" id="step2">
+      <div class="circle"><span>4</span></div>
+      <h2 class="step-header">
+        Eyelashes
+        &Brows</h2>
+        <img class="image-scroll" src="img/eyeimage.jpeg" alt="" srcset="">
+
+
+        <p class="para-section">This specialized treatment targets problem areas, employing a combination of targeted techniques to stimulate circulation, 
+          break down stubborn cellulite, and promote lymphatic drainage. 
+          Our skilled therapists use a unique blend of firm strokes and specialized tools to improve skin elasticity, reduce the appearance of dimples, 
+          and leave you with a revitalized, toned silhouette</p>    
+    </div>
+
+    <div class="step" id="step2">
+      <div class="circle"><span>5</span></div>
+      <h2 class="step-header">Product Conditioning</h2>
+      <img class="image-scroll" src="img/massageimage.jpeg" alt="" srcset="">
+      <p class="para-section">This specialized treatment targets problem areas, employing a combination of targeted techniques to stimulate circulation, 
+        break down stubborn cellulite, and promote lymphatic drainage. 
+        Our skilled therapists use a unique blend of firm strokes and specialized tools to improve skin elasticity, reduce the appearance of dimples, 
+        and leave you with a revitalized, toned silhouette</p>    </div>
+    <!-- Add more steps as needed -->
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="form-container">
+    <h2 class="text-6xl font-bold mb-6 text-center">Get In Touch</h1>
+
+    <form class="w-full max-w-2xl space-y-4">
+      <!-- Row 1 -->
+      <div class="flex gap-2">
+        <input type="text" placeholder="FULL NAME*" class="form-input rounded-full px-4 py-2 w-1/2" />
+        <input type="email" placeholder="EMAIL*" class="form-input rounded-full px-4 py-2 w-1/2" />
+      </div>
+  
+      <!-- Row 2 -->
+      <div class="flex gap-2">
+        <input type="text" placeholder="COMPANY NAME*" class="form-input rounded-full px-4 py-2 w-1/2" />
+        <input type="text" placeholder="PHONE NUMBER" class="form-input rounded-full px-4 py-2 w-1/2" />
+      </div>
+  
+      <!-- Message -->
+      <textarea placeholder="MESSAGE*" class="form-input w-full rounded-2xl px-4 py-3 h-32"></textarea>
+  
+  
+  
+      <!-- Submit -->
+      <div class="flex items-center mt-4">
+        <button class="flex items-center justify-center bg-black text-white rounded-full px-4 py-2 mr-2">
+          <span class="beauty-button contact"> → Submit</span>
+        </button>
+      </div>
+      <h2 class="text-6xl font-bold mt-16 text-right w-full max-w-4xl">Let’s talk.</h2>
+
+    </form>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-main">
+      <img class="footer-logo" src="img/logo-black.png" alt="" srcset="">
+      <div class="footer-contact">
+        <a class="footer-link" href="mailto:info@bryhel.com">ritoldochka008@gmail.com</a>
+        <a class="footer-link" href="tel:+19543669429">+44 7789 452801</a>
+
+        <div class="footer-nav">
+          <li><a class="active" href="#">HOME</a></li>
+          <li><a class="footer-a" href="#">PRODUCTS</a></li>
+          <li><a class="footer-a"  href="#">SERVICES</a></li>
+          <li><a class="footer-a"  href="#">ABOUT</a></li>
+          <li><a class="footer-a"  href="#">BLOG</a></li>
+        </div>
+
+        <div class="social-links">
+          <a class="footer-link" href="https://www.instagram.com/bryhelcosmeticlabs/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="21" height="21" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="18" x="3" y="3" rx="5" stroke="#f7f0e8" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="#f7f0e8" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="#f7f0e8"/></svg>
+          </a>
+          <a class="footer-link" href="https://www.linkedin.com/company/bryhel-cosmetic-laboratories/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="19" height="19" fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="16" height="16" rx="4" stroke="#f7f0e8" stroke-width="2"/><rect x="5" y="8.5" width="2" height="5.5" fill="#f7f0e8"/><rect x="5" y="6" width="2" height="2" fill="#f7f0e8"/><rect x="9" y="11" width="2" height="3" fill="#f7f0e8"/><rect x="11" y="11" width="2" height="3" fill="#f7f0e8"/><rect x="9" y="8.5" width="4" height="2" fill="#f7f0e8"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-legal">&copy; Cosmetology Le Calme 2023</div>
+  </footer>
+</body>
+</html>
